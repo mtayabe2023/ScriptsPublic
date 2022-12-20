@@ -1,0 +1,11 @@
+pipeline {
+   stages {
+        stage('Iniciando o Clone') {
+            steps {
+                echo('Clonando')
+                
+                git branch: 'main', url: 'https://github.com/tdsynnexgit/scriptspublic'
+            }
+        }
+    }
+}
